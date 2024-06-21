@@ -61,7 +61,7 @@
   ********************************************************/
 
   //利用$.ajax()方法傳送請求並取得回應
-  $.ajax(
+  /* $.ajax(
     {
       url: 'https://kktix.com/events.json',
       type: 'get',
@@ -79,10 +79,15 @@
       },
 
     }
-  )
+  ) */
 
 
   //利用$.get()方法傳送請求並取得回應
-
+  $.get('https://kktix.com/events.json', (data) => {
+    let events = data.entry;
+    data.entry.forEach(event => {
+      $("ul").append("<li>" + event.title + "</li>")
+    })
+  })
 
 </script>
