@@ -1,13 +1,12 @@
 <!-- Modal -->
 <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="addModalLabel">Modal title</h1>
+                <h1 class="modal-title fs-5" id="addModalLabel">新增學生</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <h1 class="w-100 text-center">新增學生</h1>
                 <form class='form-group mx-auto col-6 mt-5'>
 
                     <div class='d-flex my-2'>
@@ -64,7 +63,7 @@
     </div>
 </div>
 
-</div>
+
 
 <script>
     function send() {
