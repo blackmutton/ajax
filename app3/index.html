@@ -34,7 +34,7 @@
 <body>
     <main class="container">
         <h1 class="header">學生資料管理系統</h1>
-        <button class="btn btn-primary btn-lg my-3" onclick="$('#modal').load('add_form.php')">
+        <button class="btn btn-primary btn-lg my-3" onclick="$('#modal').load('add_form.php',{nowClassroom})">
             新增學生
         </button>
         <div id="classrooms"></div>
@@ -138,7 +138,7 @@
 
     }
     //編輯資料的函式
-    
+
 
     //刪除資料的函式
     function del(id) {

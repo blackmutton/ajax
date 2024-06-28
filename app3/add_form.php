@@ -1,3 +1,10 @@
+<?php
+if ($_POST['nowClassroom'] != 0) {
+    $code = $_POST['nowClassroom'];
+} else {
+    $code = "";
+}
+?>
 <!-- Modal -->
 <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -15,7 +22,7 @@
                     </div>
                     <div class='d-flex my-2'>
                         <label for="" class='col-3 form-label'>班級代號</label>
-                        <input class="form-control" type="number" name="classroom" id="classroom">
+                        <input class="form-control" type="number" name="classroom" id="classroom" value=<?=$code;?>>
                     </div>
                     <div class='d-flex my-2'>
                         <label for="" class='col-3 form-label'>座號</label>
